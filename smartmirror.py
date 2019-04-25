@@ -281,7 +281,7 @@ class MCalendar(Frame):
                 if (event.begin>= now) and (event.begin <= then):
                     listOfEvents.append(event)
             
-            listOfEvents.sort(key=lambda x: x.begin) #sortera efter datum
+            listOfEvents.sort(key=lambda x: x.begin) #sortera efter datum och tid
 
             for event in listOfEvents[0:5]: #få de 5 kommande eventen
                     startDate = event.begin
